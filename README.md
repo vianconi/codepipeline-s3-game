@@ -1,7 +1,3 @@
-# Juega ahora, en el siguiente link:
-
-http://my-meme-game-1987.s3-website-us-east-1.amazonaws.com/
-
 # Continuous Deployment using AWS Code Pipeline and S3
 
 This repo contains the code files used in this [YouTube video](https://youtu.be/biYVW1TMYAU).
