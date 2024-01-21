@@ -16,3 +16,24 @@ Use this code for your bucket policy.  This allows everyone to read/view everyth
     	}
     ]
 }
+
+
+Esta políticia es para impedir a que se eliminen los objetos de la web estática
+
+{
+    "Version": "2012-10-17",
+    "Id": "MyBucketPolicy",
+    "Statement": [
+        {
+            "Sid": "BucketPutDelete",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:DeleteObject",
+            "Resource": [
+                "arn:aws:s3:::<bucket-name>/index.html",
+                "arn:aws:s3:::<bucket-name>/script.js",
+                "arn:aws:s3:::<bucket-name>/style.css"
+        ]
+        }
+    ]
+}
